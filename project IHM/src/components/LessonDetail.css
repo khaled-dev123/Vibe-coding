@@ -1,0 +1,121 @@
+.lesson-detail-container {
+    padding: var(--spacing-2xl) 0;
+    min-height: calc(100vh - 80px);
+}
+
+.lesson-detail-header {
+    margin-bottom: var(--spacing-xl);
+}
+
+.lesson-detail-title-section {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-xl);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+}
+
+.lesson-detail-icon {
+    font-size: 5rem;
+    flex-shrink: 0;
+}
+
+.lesson-detail-title {
+    margin-bottom: var(--spacing-md);
+}
+
+.lesson-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.lesson-text-content {
+    padding: var(--spacing-2xl);
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto var(--spacing-2xl);
+}
+
+.lesson-text-content h1 {
+    font-size: var(--font-size-3xl);
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.lesson-text-content h2 {
+    font-size: var(--font-size-2xl);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary-light);
+}
+
+.lesson-text-content h3 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-secondary);
+}
+
+.lesson-text-content p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+}
+
+.lesson-text-content ul,
+.lesson-text-content ol {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-xl);
+}
+
+.lesson-text-content li {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-secondary);
+}
+
+.lesson-text-content strong {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.lesson-text-content code {
+    background: var(--color-surface);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-family: 'Courier New', monospace;
+    color: var(--color-primary-light);
+}
+
+.lesson-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-2xl);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .lesson-detail-title-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lesson-detail-icon {
+        font-size: 4rem;
+    }
+
+    .lesson-meta {
+        justify-content: center;
+    }
+
+    .lesson-text-content {
+        padding: var(--spacing-lg);
+    }
+}

@@ -1,0 +1,213 @@
+.results-container {
+    padding: var(--spacing-2xl) 0;
+    min-height: calc(100vh - 80px);
+}
+
+.results-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* Score Card */
+.score-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl);
+}
+
+.score-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--glass-border);
+    margin-bottom: var(--spacing-xl);
+}
+
+.score-icon {
+    animation: pulse 2s infinite;
+}
+
+.score-details {
+    text-align: center;
+}
+
+.score-percentage {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: var(--spacing-sm);
+}
+
+.score-label {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-primary);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.score-fraction {
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+}
+
+/* Score Status */
+.score-status {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+}
+
+.pass-message,
+.fail-message {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.pass-message {
+    background: rgba(16, 185, 129, 0.1);
+    border: 2px solid var(--color-success);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+}
+
+.fail-message {
+    background: rgba(99, 102, 241, 0.1);
+    border: 2px solid var(--color-primary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+}
+
+.pass-icon,
+.fail-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.pass-message strong,
+.fail-message strong {
+    display: block;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-primary);
+}
+
+.pass-message p,
+.fail-message p {
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+/* Categories Section */
+.categories-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.categories-section h2 {
+    margin-bottom: var(--spacing-xl);
+}
+
+.categories-grid {
+    margin-top: var(--spacing-xl);
+}
+
+.category-card {
+    padding: var(--spacing-lg);
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.category-header h3 {
+    font-size: var(--font-size-lg);
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.category-progress {
+    margin-top: var(--spacing-md);
+}
+
+.category-score-text {
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    text-align: right;
+}
+
+/* Recommendations */
+.recommendations-section {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.recommendations-section h2 {
+    margin-bottom: var(--spacing-xl);
+}
+
+.recommendations-card {
+    padding: var(--spacing-xl);
+}
+
+.recommendation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+}
+
+.recommendation-item:not(:last-child) {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.recommendation-icon {
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+}
+
+.recommendation-item p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Results Actions */
+.results-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .score-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .score-percentage {
+        font-size: var(--font-size-3xl);
+    }
+
+    .pass-message,
+    .fail-message {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .results-actions {
+        flex-direction: column;
+    }
+
+    .results-actions .btn {
+        width: 100%;
+    }
+}
