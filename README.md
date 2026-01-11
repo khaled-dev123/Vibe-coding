@@ -37,7 +37,7 @@ The platform allows users to:
 
 ### Installation
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/khaled-dev123/Vibe-coding.git
 cd your-repo-name
 npm install
 npm start
